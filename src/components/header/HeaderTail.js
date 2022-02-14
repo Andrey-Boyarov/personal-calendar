@@ -3,7 +3,7 @@ import UnAuthorizeButton from "./UnAuthorizeButton";
 
 export default function HeaderTail(){
     return(
-        <div>
+        <div className={"HeaderTail"}>
             <UserNameButton/>
             <UnAuthorizeButton/>
         </div>

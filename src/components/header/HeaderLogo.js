@@ -1,10 +1,11 @@
-import icon from "../../images/calendar item image.png"
+import icon from "../../images/calendar-item-image.svg"
+import "../../styles/HeaderLogo.css"
 
 export default function HeaderLogo(){
     return(
-        <div>
+        <div className={"HeaderLogo"}>
             <img src={icon}/>
-            <div>Calendar</div>
+            <div className={"text"}>Calendar</div>
         </div>
     );
 }

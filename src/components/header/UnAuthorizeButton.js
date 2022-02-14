@@ -1,6 +1,9 @@
+import "../../styles/UnAuthorizeButton.css"
+import Leave from "../../utils/Leave";
+
 export default function UnAuthorizeButton(){
     return(
-        <button>
+        <button className={"UnAuthorizeButton"} onClick={Leave}>
             Leave
         </button>
     );
