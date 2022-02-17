@@ -2,5 +2,6 @@
   "authRequest": "/api/auth/getAuthData",
   "leave": "/api/auth/leave",
   "getAllEvents": "/api/events/getAllEvents",
-  "getEventById": "/api/events/getEventById"
+  "getEventById": "/api/events/getEventById",
+  "getEventsByDay": "/api/events/getEventsByDay"
 }
