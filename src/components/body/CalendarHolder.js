@@ -5,7 +5,7 @@ export default function CalendarHolder({date, setDate}){
 
     return(
         <div className={"CalendarHolder"}>
-            <Calendar value={date} onChange={setDate}/>
+            <Calendar value={date} onChange={setDate} locale={"eng"}/>
         </div>
     );
 }

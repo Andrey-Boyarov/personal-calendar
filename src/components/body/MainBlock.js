@@ -1,5 +1,6 @@
 import CalendarContainer from "./CalendarContainer";
 import CalendarSideBar from "./CalendarSideBar";
+import "../../styles/MainBlock.css"
 
 export default function MainBlock({date, setDate}){
     return(

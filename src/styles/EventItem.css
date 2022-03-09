@@ -1,6 +1,6 @@
 .EventItem{
-    border: solid 4px rgba(80, 91, 102, 0.62);
-    border-radius: 12px;
+    border: solid 2px dimgray;
+    border-radius: 10px;
 }
 
 .EventItem:not(:last-child){

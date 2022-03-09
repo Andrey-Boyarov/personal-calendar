@@ -1,0 +1,7 @@
+.RightTitle{
+    border: solid 2px dimgray;
+    border-radius: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    background: rgba(0, 0, 0, 0.2);
+}
