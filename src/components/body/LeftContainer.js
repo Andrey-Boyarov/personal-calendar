@@ -1,14 +1,17 @@
 import MainBlock from "./MainBlock";
 import EventListDay from "./EventListDay";
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import "../../styles/LeftContainer.css"
 
 export default function LeftContainer(){
-    const [curDay, setCurDay] = useState()
+    const [date, setDate] = useState()
+
+    useEffect(() => console.log(date), [date])
 
     return(
         <div className={"LeftContainer"}>
-            <MainBlock state={{curDay, setCurDay}}/>
-            <EventListDay day={curDay}/>
+            <MainBlock date={date} setDate={setDate}/>
+            <EventListDay day={date}/>
         </div>
     );
 }

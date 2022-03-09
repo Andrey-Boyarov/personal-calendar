@@ -1,0 +1,8 @@
+.EventItem{
+    border: solid 4px rgba(80, 91, 102, 0.62);
+    border-radius: 12px;
+}
+
+.EventItem:not(:last-child){
+    margin-bottom: 5px;
+}

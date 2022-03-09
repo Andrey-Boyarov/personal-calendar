@@ -1,5 +1,5 @@
 .Separator{
     height: 2px;
     background: rgb(253,29,29);
-    background: linear-gradient(90deg, rgba(253,29,29,0.5) 17%, rgba(131,58,180,0.5) 49%, rgba(252,244,69,0.5) 82%);
+    background: linear-gradient(90deg, rgba(234, 230, 230, 0.5) 17%, rgba(80, 79, 80, 0.5) 49%, rgba(153, 153, 151, 0.5) 82%);
 }

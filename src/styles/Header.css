@@ -1,7 +1,6 @@
 .Header{
     display: flex;
     justify-content: space-between;
-    background: rgb(252,176,69);
-    background: linear-gradient(90deg, rgba(252,176,69,0.5) 0%, rgba(253,29,29,0.5) 83%, rgba(131,58,180,0.5) 100%);
+    background: linear-gradient(90deg, orangered, black, greenyellow);
     color: aliceblue;
 }
