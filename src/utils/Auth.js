@@ -6,6 +6,7 @@ export default function Auth(){
     const [auth, setAuth] = useState({
         login: "",
         userName: "",
+        accessToken: ""
     })
 
     console.log((auth.login === "" && auth.userName === "")
