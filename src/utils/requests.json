@@ -4,5 +4,5 @@
   "getAllEvents": "/api/events/getAllEvents",
   "getEventById": "/api/events/getEventById",
   "getEventsByDay": "/api/events/getEventsByDay",
-  "getUsers": "/api/admin/getUsers"
+  "userList": "/api/users/userList"
 }
