@@ -3,5 +3,6 @@
   "leave": "/api/auth/leave",
   "getAllEvents": "/api/events/getAllEvents",
   "getEventById": "/api/events/getEventById",
-  "getEventsByDay": "/api/events/getEventsByDay"
+  "getEventsByDay": "/api/events/getEventsByDay",
+  "getUsers": "/api/admin/getUsers"
 }
