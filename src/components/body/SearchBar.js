@@ -42,9 +42,11 @@ export default function SearchBar () {
                 onChange={(e) => setSearchTerm(e.target.value)}
             />
             <ul className="userList">
-                {userList.map((user, index) => {
-                    return <li key={index} className="filteredUserList"></li>
-                })}
+                {userList => {
+                    if (userList) userList.map((user, index) => {
+                        <li key={index} className="filteredUserList"/>
+                    })
+                }}
             </ul>
         </div>
     );
