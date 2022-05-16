@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 import buildUrl from "../../utils/BuildUrl";
-import {$host} from "../../utils/AxiosInterceptor";
+import axios from "axios";
 
 const filterUsers = (searchText, listOfUsers) => {
     if(!searchText) {
@@ -13,7 +13,7 @@ export default function SearchBar () {
 
     const [users, setUsers] = useState([])
     const getUsers = () => {
-        $host.get(buildUrl("userList"))
+        axios.get(buildUrl("userList"))
             .then((response) => {
                 setUsers(response.data)
             })
