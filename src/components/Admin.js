@@ -8,7 +8,6 @@ export default function Admin(){
 
     return(
         <div>
-            <SearchBar/>
             <div>{GetUsers(searchProp).map(user =>
                 <div>
                     <TargetUser userName={user.userName} userRoles={user.userRoles}/>

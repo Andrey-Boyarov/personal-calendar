@@ -9,7 +9,6 @@ export default function Consumer() {
             <Separator/>
             <Header/>
             <Separator/>
-            <SearchBar/>
             <Body/>
         </div>
     );

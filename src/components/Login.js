@@ -24,12 +24,15 @@ export default function Login(){
     }
 
     return(
-        <div>
+        <div className={"container-login"}>
             <text>Welcome to Calendar</text>
-            <input type="text" placeholder="your login"/>
-            <input type="password" placeholder="your password"/>
-            <button onClick={auth}>Sign in</button>
-            <Link to="/register">Sign up</Link>
+            <div>
+                <input type="text" placeholder="your login"/>
+                <input type="password" placeholder="your password"/>
+                <button onClick={auth}>Sign in</button>
+                <Link to="/register">Sign up</Link>
+            </div>
+
         </div>
     );
 }*/

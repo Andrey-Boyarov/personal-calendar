@@ -1,6 +1,7 @@
 .EventItem{
     border: solid 2px dimgray;
     border-radius: 10px;
+    text-align: center;
 }
 
 .EventItem:not(:last-child){

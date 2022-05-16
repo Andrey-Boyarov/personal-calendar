@@ -2,3 +2,18 @@
     padding: 5px;
 }
 
+.switch-btn {
+    margin-top: 5px;
+    width: 100%;
+    max-width: 150px;
+    max-height: 16px;
+    background: aliceblue;
+    color: red;
+    border: 1px solid red;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+

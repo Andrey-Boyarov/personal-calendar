@@ -1,7 +1,19 @@
 .App {
-  text-align: center;
+  text-align: end;
   background: #1e1e23;
   height: 100vh;
   font-family: Roboto, sans-serif;
   color: aliceblue;
+}
+.container-login {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
