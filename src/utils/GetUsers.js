@@ -8,7 +8,7 @@ function request(users, prop){
 }
 
 export default function GetUsers(prop){
-    let result
+    let result = []
     request(result, prop)
     return result
 }
