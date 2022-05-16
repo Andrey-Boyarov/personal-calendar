@@ -4,6 +4,7 @@ import Login from "./components/Login";
 import {Route, Routes} from "react-router";
 import {BrowserRouter} from "react-router-dom";
 import Admin from "./components/Admin";
+import Consumer from "./components/Consumer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <BrowserRouter>
                 <Routes>
                     <Route path="/api/creator" element={<Creator/>}/>
+                    <Route path="/api/consumer" element={<Consumer/>}/>
                     <Route path="/api/admin" element={<Admin/>}/>
                     <Route path="/login" element={<Login/>}/>
                 </Routes>
