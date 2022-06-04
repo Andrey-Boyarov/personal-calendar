@@ -11,6 +11,7 @@ export default function LeftContainer(){
     return(
         <div className={"LeftContainer"}>
             <MainBlock date={date} setDate={setDate}/>
+
             <EventListDay day={date}/>
         </div>
     );

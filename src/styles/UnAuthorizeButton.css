@@ -1,5 +1,6 @@
 .UnAuthorizeButton{
     margin-top: 5px;
+    margin-right: 5px;
     width: 100%;
     max-width: 150px;
     background: aliceblue;
@@ -8,5 +9,6 @@
     border-radius: 6px;
     font-weight: 700;
     font-size: 14px;
+    text-align: center;
     cursor: pointer;
 }

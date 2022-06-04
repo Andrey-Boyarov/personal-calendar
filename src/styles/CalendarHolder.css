@@ -1,5 +1,5 @@
 .react-calendar {
-    max-width: 68vh;
+    /* max-width: 68vh;*/
     max-height: 60vh;
     background: transparent;
     font-family: Roboto, sans-serif;
@@ -38,6 +38,7 @@
 .react-calendar__navigation {
     height: 44px;
     margin-bottom: 1em;
+    text-align: center;
 }
 .react-calendar__navigation button {
     border-radius: 5px;

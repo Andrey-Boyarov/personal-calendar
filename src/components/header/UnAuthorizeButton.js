@@ -1,10 +1,11 @@
 import "../../styles/UnAuthorizeButton.css"
 import Leave from "../../utils/Leave";
+import {Link} from "react-router-dom";
 
 export default function UnAuthorizeButton(){
     return(
-        <button className={"UnAuthorizeButton"} onClick={Leave}>
-            Leave
-        </button>
+        <div className={"UnAuthorizeButton"}>
+                <Link to='/login'>Leave</Link>
+        </div>
     );
 }

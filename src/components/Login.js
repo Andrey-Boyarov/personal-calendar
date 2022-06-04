@@ -1,46 +1,9 @@
-/*
-import {Link} from "react-router-dom";
-import axios from "axios";
-import Cookies from "js-cookie"
-
-export default function Login(){
-
-    const auth = () => {
-        axios.post("http://localhost:3005/login", {username: "root", password: "root" })
-            .then(response => {
-                //get token from response
-                const token  =  response.data.token;
-
-                //set JWT token to local
-                localStorage.setItem("token", token);
-
-                //set token to axios common header
-                Cookies.set("auth-token", token);
-
-//redirect user to home page
-                window.location.href = '/'
-            })
-            .catch(err => console.log(err));
-    }
-
-    return(
-        <div className={"container-login"}>
-            <text>Welcome to Calendar</text>
-            <div>
-                <input type="text" placeholder="your login"/>
-                <input type="password" placeholder="your password"/>
-                <button onClick={auth}>Sign in</button>
-                <Link to="/register">Sign up</Link>
-            </div>
-
-        </div>
-    );
-}*/
 import React, { Component } from "react";
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import AuthService from "./test/AuthService";
+
 const required = value => {
     if (!value) {
         return (
@@ -107,14 +70,10 @@ export default class Login extends Component {
     }
     render() {
         return (
-            <div className="col-md-12">
+            <div className="login-box">
                 <div className="card card-container">
-                    {/*<img*/}
-                    {/*    src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"*/}
-                    {/*    alt="profile-img"*/}
-                    {/*    className="profile-img-card"*/}
-                    {/*/>*/}
                     <Form
+                        className={"login-wrap"}
                         onSubmit={this.handleLogin}
                         ref={c => {
                             this.form = c;

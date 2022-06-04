@@ -1,6 +1,5 @@
 import UserNameButton from "./UserNameButton";
 import UnAuthorizeButton from "./UnAuthorizeButton";
-import SwitchRole from "../../utils/SwitchRole";
 
 
 
