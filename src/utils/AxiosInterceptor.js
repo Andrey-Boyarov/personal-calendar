@@ -1,6 +1,6 @@
 import axios from "axios";
 import Cookies from "js-cookie"
-export const API_URL = 'http://localhost:8041'
+export const API_URL = 'http://localhost:8041/'
 
 
 /*const $host = axios.create({

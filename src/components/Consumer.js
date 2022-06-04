@@ -20,6 +20,7 @@ export default function Consumer() {
             <Header/>
             <Separator/>
             <Body/>
+            <SwitchBtn/>
         </div>
     );
 }
