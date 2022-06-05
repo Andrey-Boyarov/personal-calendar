@@ -91,7 +91,7 @@
   font-family: Roboto, sans-serif;
   color: aliceblue;
   border: solid 2px dimgray;
-  border-radius: 4px;
+  border-radius: 11px;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -103,7 +103,8 @@
   transition: .5s;
   color: #ff4500;
   border: #ff4500 1px solid;
-  border-radius: 10px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .btn-wrap {
@@ -120,12 +121,21 @@
   font-family: Roboto, sans-serif;
   color: #ffffff;
   border: solid 2px dimgray;
-  border-radius: 4px;
+  border-radius: 11px;
   text-align: center;
   margin-bottom: 10px;
   width: 20%;
   background-color: #1e1e23;
   height: 25px;
+}
+
+
+.create-event-btn-submit:hover {
+  transition: .5s;
+  color: #ff4500;
+  border: #ff4500 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .content-date {

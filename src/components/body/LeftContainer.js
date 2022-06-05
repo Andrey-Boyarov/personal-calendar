@@ -3,20 +3,27 @@ import EventListDay from "./EventListDay";
 import {useEffect, useState} from "react";
 import "../../styles/LeftContainer.css"
 import CreateEventModal from "../modals/CreateEventModal";
+import CreateEventButton from "./CreateEventButton";
+import Auth from "../../utils/Auth";
 
-export default function LeftContainer(){
+export default function LeftContainer(props){
     const [date, setDate] = useState()
-    const [modalActive, setModalActive] = useState();
     useEffect(() => console.log(date), [date])
+
+    const isLoggedIn = true;
+
+    const userRole = Auth().userRole;
 
     return(
         <div className={"LeftContainer"}>
             <MainBlock date={date} setDate={setDate}/>
-            <div className="btn-wrap">
-                <button className="create-event-btn" onClick={() => setModalActive(true)}>Create Event</button>
-            </div>
+            {userRole !== "" ? (
+                <CreateEventButton/>
+            ) : (
+                <div></div>
+            )
+            }
             <EventListDay day={date}/>
-            <CreateEventModal active={modalActive} setActive={setModalActive}/>
         </div>
     );
 }

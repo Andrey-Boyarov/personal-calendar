@@ -3,6 +3,7 @@ import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import AuthService from "./test/AuthService";
+import Auth from "../utils/Auth";
 
 const required = value => {
     if (!value) {
@@ -14,6 +15,7 @@ const required = value => {
     }
 };
 export default class Login extends Component {
+
     constructor(props) {
         super(props);
         this.handleLogin = this.handleLogin.bind(this);
@@ -26,16 +28,19 @@ export default class Login extends Component {
             message: ""
         };
     }
+
     onChangeUsername(e) {
         this.setState({
             username: e.target.value
         });
     }
+
     onChangePassword(e) {
         this.setState({
             password: e.target.value
         });
     }
+
     handleLogin(e) {
         e.preventDefault();
         this.setState({
@@ -46,7 +51,12 @@ export default class Login extends Component {
         if (this.checkBtn.context._errors.length === 0) {
             AuthService.login(this.state.username, this.state.password).then(
                 () => {
-                    this.props.history.push("/profile");
+                    if(Auth().userRole === "creator") {
+                        this.props.history.push("/api/creator");
+                    }
+                    if(Auth().userRole === "admin") {
+                        this.props.history.push("/api/admin");
+                    }
                     window.location.reload();
                 },
                 error => {

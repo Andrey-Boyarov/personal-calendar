@@ -6,6 +6,7 @@ export default function Auth(){
     const [auth, setAuth] = useState({
         login: "",
         userName: "",
+        userRole: "",
         accessToken: ""
     })
 
@@ -18,7 +19,8 @@ export default function Auth(){
             .then(data => {
                 setAuth({
                     login: data["login"],
-                    userName: data["userName"]
+                    userName: data["userName"],
+                    userRole: data["userRole"]
                 })
             })
     }
